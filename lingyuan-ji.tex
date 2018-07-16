@@ -1,0 +1,140 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compact Academic CV
+% LaTeX Template
+% Version 1.0 (10/6/2012)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Dario Taraborelli (http://nitens.org/taraborelli/home)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important:
+% This template needs to be compiled using XeLaTeX
+%
+% Note: this template has the option to use the Hoefler Text font, see the
+% font configurations section below for instructions on using this font
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt, a4paper]{article} % Document font size and paper size
+
+\usepackage{fontspec} % Allows the use of OpenType fonts
+
+\usepackage{geometry} % Allows the configuration of document margins
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in} % Document margin settings
+\setlength\parindent{0in} % Remove paragraph indentation
+
+\usepackage[usenames,dvipsnames]{xcolor} % Custom colors
+
+\usepackage{sectsty} % Allows changing the font options for sections in a document
+\usepackage[normalem]{ulem} % Custom underlining
+\usepackage{xunicode} % Allows generation of unicode characters from accented glyphs
+\defaultfontfeatures{Mapping=tex-text} % Converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+\usepackage{marginnote} % For margin years
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}} % New command for including margin years
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt} % Slightly increase the distance of the margin years from the contant
+\reversemarginpar
+
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Albert Einstein - vita},pdfauthor={Albert Einstein}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} % Link colors
+
+%----------------------------------------------------------------------------------------
+%	FONT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% Two font choices are available in this template, the default is Linux Libertine, available for free at: http://www.linuxlibertine.org while the secondary choice is Hoefler Text which comes bundled with Mac OSX.
+% To use Hoefler Text, comment out the Linux Libertine block below and uncomment the Hoefler Text block. You will also need to replace the "\&" characters with "\amper{}" in section titles.
+
+% Linux Libertine Font (default)
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+\sectionfont{\mdseries\upshape\Large} % Set font options for sections
+\subsectionfont{\mdseries\scshape\normalsize} % Set font options for subsections
+\subsubsectionfont{\mdseries\upshape\large} % Set font options for subsubsections
+\chardef\&="E050 % Custom ampersand character
+
+% Hoefler Text Font (bundled with Mac OSX)
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+%\setsansfont[Scale=0.9]{Optima Regular} % Set sans font, used in the main name and titles in the document
+%\newcommand{\amper}{{\fontspec[Scale=.95]{Hoefler Text}\selectfont\itshape\&}} % Custom ampersand character
+%\sectionfont{\sffamily\mdseries\large\underline} % Set font options for sections
+%\subsectionfont{\rmfamily\mdseries\scshape\normalsize} % Set font options for subsections
+%\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} % Set font options for subsubsections
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	CONTACT AND GENERAL INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+{\LARGE Lingyuan Ji}\\[1cm] % Your name
+Bloomberg 465\\ % Your address
+3400 N. Charles St.\\
+Baltimore, MD \texttt{21218}\\
+United States of America\\[.2cm]
+%Phone: \texttt{609-734-8000}\\ % Your phone number
+%Fax: \texttt{609-924-8399}\\[.2cm] % Your fax number
+Email: \href{mailto:lingyuan.ji@jhu.edu}{lingyuan.ji@jhu.edu}\\ % Your email address
+\textsc{url}: \href{http://portfolio.lingyuanji.com}{http://portfolio.lingyuanji.com}\\ % Your academic/personal website
+
+\vfill % Whitespace between contact information and specific CV information
+
+%------------------------------------------------
+
+Born: March 15, 1995\\ % Your date of birth
+Nationality: People's Republic of China % Your nationality
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section*{Education}
+
+\years{2017--Present}\textsc{Pursuing Ph.D.}, \emph{Johns Hopkins University, Department of Physics and Astronomy.}\\ 
+Advisor: Prof.\ Marc Kamionkowski\\
+\years{2013-2017}\textsc{B.Sc.}, \emph{University of Science and Technology of China, Department of Physics.}\\
+Thesis: Spinor's Cosmological Perturbation Theory Based on Coherent States\\
+Advisors: Prof.\ Antonino Marciano, Prof.\ Yifu Cai\\
+
+
+\section*{Teaching}
+
+\years{2018 Spring} \textsc{Teaching Assistant}, \emph{AS.171.627 Astrophysical Dynamics}\\
+Lecturer: Prof.\ Nadia Zakamska\\
+\years{2017 Fall} \textsc{Teaching Assistant}, \emph{AS.171.107 General Physics for Physical Sciences Majors (AL)}\\
+Lecturer: Prof.\ Robert Leheny \& Prof.\ Rosemary Wyse\\
+\years{2017 Fall} \textsc{Teacher}, \emph{AS.173.111 General Physics Laboratory I}\\
+
+\section*{Awards}
+
+\years{2016} \textsc{National Scholarship}, \emph{Ministry of Education P.R.C.}\\
+\years{2015} \textsc{Global Responsibility Scholarship}, \emph{University of Science and Technology of China}.\\
+\years{2014} \textsc{National Scholarship}, \emph{Ministry of Education P.R.C.}\\
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+{\scriptsize Last updated: \today\- •\- Lingyuan Ji © All Rights Reserved} % Any final footer text such as a URL to the latest version of your CV, last updated date, compiled in XeTeX, etc
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
