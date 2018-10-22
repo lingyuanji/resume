@@ -7,4 +7,4 @@ There is a compiled version of my resume in the repo. But if you wish to compile
 ```
 source make-resume.sh
 ```
-Publication list will always be up to date as it is pulled automatically from [INSPIREHEP](http://www.inspirehep.net) by query `find a L.Ji.7` upon every document compilation.
+Publication list will always be up to date as it is pulled automatically from [INSPIREHEP](http://www.inspirehep.net) by query `find a Ling.Yuan.Ji.1` upon every document compilation.
