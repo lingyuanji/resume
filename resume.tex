@@ -1,151 +1,102 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Compact Academic CV
-% LaTeX Template
-% Version 1.0 (10/6/2012)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Dario Taraborelli (http://nitens.org/taraborelli/home)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-% Important:
-% This template needs to be compiled using XeLaTeX
-%
-% Note: this template has the option to use the Hoefler Text font, see the
-% font configurations section below for instructions on using this font
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper]{moderncv}
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\recomputelengths
 
-\documentclass[12pt, letterpaper]{article} % Document font size and paper size
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
 
-\usepackage{fontspec} % Allows the use of OpenType fonts
+\firstname{Lingyuan}
+\lastname{\textbf{Ji}}
+\address{341 Campbell Hall}{University of California}{Berkeley, CA 94720}
+\email{lingyuan.ji@berkeley.edu}
+\extrainfo{\httplink[\texttt{lingyuanji.github.io}]{lingyuanji.github.io}}
 
-\usepackage{geometry} % Allows the configuration of document margins
-\geometry{letterpaper, margin=1.4in, marginparsep=7pt, marginparwidth=.6in} % Document margin settings
-\setlength\parindent{0in} % Remove paragraph indentation
-
-\usepackage[usenames,dvipsnames]{xcolor} % Custom colors
-
-\usepackage{sectsty} % Allows changing the font options for sections in a document
-\usepackage[normalem]{ulem} % Custom underlining
-\usepackage{xunicode} % Allows generation of unicode characters from accented glyphs
-\defaultfontfeatures{Mapping=tex-text} % Converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
-
-\usepackage{marginnote} % For margin years
-\newcommand{\years}[1]{\marginnote{\scriptsize #1}} % New command for including margin years
-\renewcommand*{\raggedleftmarginnote}{}
-\setlength{\marginparsep}{7pt} % Slightly increase the distance of the margin years from the contant
-\reversemarginpar
-
-\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Resume},pdfauthor={Lingyuan Ji}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
-\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} % Link colors
-
-%----------------------------------------------------------------------------------------
-%	FONT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
-% Two font choices are available in this template, the default is Linux Libertine, available for free at: http://www.linuxlibertine.org while the secondary choice is Hoefler Text which comes bundled with Mac OSX.
-% To use Hoefler Text, comment out the Linux Libertine block below and uncomment the Hoefler Text block. You will also need to replace the "\&" characters with "\amper{}" in section titles.
-
-% Linux Libertine Font (default)
-\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O} % Main text font
-%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
-\sectionfont{\mdseries\upshape\Large} % Set font options for sections
-\subsectionfont{\mdseries\scshape\normalsize} % Set font options for subsections
-\subsubsectionfont{\mdseries\upshape\large} % Set font options for subsubsections
-\chardef\&="E050 % Custom ampersand character
-
-% Hoefler Text Font (bundled with Mac OSX)
-%\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text} % Main text font
-%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
-%\setsansfont[Scale=0.9]{Optima Regular} % Set sans font, used in the main name and titles in the document
-%\newcommand{\amper}{{\fontspec[Scale=.95]{Hoefler Text}\selectfont\itshape\&}} % Custom ampersand character
-%\sectionfont{\sffamily\mdseries\large\underline} % Set font options for sections
-%\subsectionfont{\rmfamily\mdseries\scshape\normalsize} % Set font options for subsections
-%\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} % Set font options for subsubsections
-
-%----------------------------------------------------------------------------------------
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	CONTACT AND GENERAL INFORMATION SECTION
-%----------------------------------------------------------------------------------------
+\maketitle
 
-{\LARGE Lingyuan Ji}\\[1cm] % Your name
-Bloomberg 455\\ % Your address
-3400 North Charles Street\\
-Baltimore, MD \texttt{21218}\\
-United States of America\\[.2cm]
-%Phone: \texttt{609-734-8000}\\ % Your phone number
-%Fax: \texttt{609-924-8399}\\[.2cm] % Your fax number
-Email: \href{mailto:lingyuan.ji@jhu.edu}{lingyuan.ji@jhu.edu}\\ % Your email address
-\textsc{url}: \href{https://lingyuanji.github.io}{lingyuanji.github.io}\\ % Your academic/personal website
+\vspace{-2em}
 
-% \vfill % Whitespace between contact information and specific CV information
+\section{Education}
 
-%------------------------------------------------
+\cventry{2017--2022}{Doctor of Philosophy in Physics}{Johns Hopkins University, Department of Physics and Astronomy}{Baltimore MD, USA}{Advisor: Marc Kamionkowski}{}
 
-% Your date of birth
-% Your nationality
+\cventry{2013--2017}{Bachelor of Science in Physics}{University of Science and Technology of China, Department of Physics}{Hefei, China}{Advisors: Antonino Marciano, Yifu Cai}{}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+\section{Appointments}
 
-\section*{Education}
+\cventry{2022--(present)}{BCCP Fellow}{Berkeley Center for Cosmological Physics}{Department of Physics, University of California}{Berkeley, CA}{}
 
-\years{2017--Present}\textsc{Pursuing Ph.D.}, \emph{Johns Hopkins University, Department of Physics and Astronomy.}\\
-Advisor: Prof.\ Marc Kamionkowski\\
-\years{2013-2017}\textsc{B.Sc.}, \emph{University of Science and Technology of China, Department of Physics.}\\
-Thesis: Spinor's Cosmological Perturbation Theory Based on Coherent States\\
-Advisors: Prof.\ Antonino Marciano, Prof.\ Yifu Cai\\
 
-\section*{Teaching}
-
-\years{2019 Spring} \textsc{Teaching Assistant}, \emph{AS.171.205 Intro to Practical Data Science: Beautiful Data}\\
-Lecturer: Prof.\ Alexander Szalay\\
-\years{2018 Fall} \textsc{Teaching Assistant}, \emph{AS.171.646 General Relativity}\\
-Lecturer: Prof.\ David Kaplan\\
-\years{2018 Spring} \textsc{Teaching Assistant}, \emph{AS.171.627 Astrophysical Dynamics}\\
-Lecturer: Prof.\ Nadia Zakamska\\
-\years{2017 Fall} \textsc{Teaching Assistant}, \emph{AS.171.107 General Physics for Physical Sciences Majors (AL)}\\
-Lecturer: Prof.\ Robert Leheny \& Prof.\ Rosemary Wyse\\
-\years{2017 Fall} \textsc{Teacher}, \emph{AS.173.111 General Physics Laboratory I}\\
-
-\section*{Awards}
-
-\years{2016} \textsc{National Scholarship}, \emph{Ministry of Education P.R.C.}\\
-\years{2015} \textsc{Global Responsibility Scholarship}, \emph{University of Science and Technology of China}.\\
-\years{2014} \textsc{National Scholarship}, \emph{Ministry of Education P.R.C.}\\
-
-\section*{Talks}
-\years{2021 Mar} \textsc{Invited}, \emph{Standard Model Prediction for Cosmological 21cm Circular Polarization}, BSM PANDEMIC Double Feature
-
-\section*{Publication}
-\renewcommand\refname{} % prevent LaTeX from adding a "References" headline
-\bibliography{my.bib}
-\bibliographystyle{hunsrt}
 \nocite{*}
+\bibliography{my.bib}{}
+\bibliographystyle{hunsrt}
+% \cvline{}{\scriptsize * indicates that the authors are listed in alphabetical order.}
 
-\vfill{} % Whitespace before final footer
+\section{Presentations}
 
-%----------------------------------------------------------------------------------------
-%	FINAL FOOTER
-%----------------------------------------------------------------------------------------
+\cventry{Apr 2023}{Invited Seminar}{KICP Seminar Series}{University of Chicago}{Chicago, IL}{Cosmological perturbations: Noncold relics without the Boltzmann hierarchy}
 
+\cventry{Mar 2022}{Invited Seminar}{Lunch Seminar Series}{Kavli IPMU}{Online}{Cosmological-Perturbation Solver without the Boltzmann Hierarchy}
+
+\cventry{Jan 2022}{Invited Seminar}{INPA Seminar Series}{Lawrence Berkeley National Lab}{Online}{Cosmological-Perturbation Solver without the Boltzmann Hierarchy}
+
+\cventry{Dec 2021}{Talk}{PACMAN Meeting}{NYU/CCA}{Online}{Wave Dark Matter Non-minimally Coupled to Gravity}
+
+\cventry{Nov 2021}{Talk}{Cosmology Lunch}{Princeton/IAS}{NJ, USA}{Cosmological-Perturbation Solver without the Boltzmann Hierarchy}
+
+\cventry{Nov 2021}{Invited Seminar}{}{Ben-Gurion University}{Online}{Cosmological-Perturbation Solver without the Boltzmann Hierarchy}
+
+\cventry{Aug 2021}{Poster}{COSMO'21}{University of Illinois}{Online}{Wave Dark Matter Non-minimally Coupled to Gravity}
+
+\cventry{Mar 2021}{Invited Talk}{BSM PANDEMIC Double Feature}{}{Online}{Standard Model Prediction for Cosmological 21cm Circular Polarization}
+
+\cventry{Sep 2019}{Poster}{Cosmic Controversies}{University of Chicago}{IL, USA}{Reheating constraints to WIMP inflation}
+
+\cventry{Nov 2018}{Talk}{}{University of Oxford}{UK}{Strong Lensing of Gamma Ray Bursts as a Probe of Compact Dark Matter}
+
+\cventry{Nov 2018}{Talk}{}{Imperial College London}{UK}{Strong Lensing of Gamma Ray Bursts as a Probe of Compact Dark Matter}
+
+\section{Awards}
+
+\cventry{2016}{National Scholarship}{Ministry of Education, China}{}{}{}
+
+\cventry{2015}{Global Responsibility Scholarship}{University of Science and Technology of China}{}{}{}
+
+\cventry{2014}{National Scholarship}{Ministry of Education, China}{}{}{}
+
+\section{Programming Languages and Packages}
+
+\cvcomputer{Numerical}{Python, C}{Symbolic}{Mathematica, SymPy}
+\cvline{Packages}{\texttt{CLASS}/\texttt{CAMB} (cosmological perturbation), \texttt{21cmFAST} (21cm semi-numerical simulation), \texttt{GADGET} ($N$-body simulation), \texttt{Blender} (3D visualization)}
+
+\section{Teaching}
+
+\cventry{Spring 2019}{Teaching Assistant}{AS.171.205 Intro to Practical Data Science: Beautiful Data}{}{}{Lecturer: Prof.\ Alexander Szalay}
+
+\cventry{Fall 2018}{Teaching Assistant}{AS.171.646 General Relativity}{}{}{Lecturer: Prof.\ David Kaplan}
+
+\cventry{Spring 2018}{Teaching Assistant}{AS.171.627 Astrophysical Dynamics}{}{}{Lecturer: Prof.\ Nadia Zakamska}
+
+\cventry{Fall 2017}{Teaching Assistant}{AS.171.107 General Physics for Physical Sciences Majors}{}{}{Lecturer: Prof.\ Robert Leheny \& Prof.\ Rosemary Wyse}
+
+\cventry{Fall 2017}{Teacher}{AS.173.111 General Physics Laboratory I}{}{}{}
+
+\section{References}
+
+\cvline{Letter 1}{Marc Kamionkowski, \emph{Johns Hopkins University}, \texttt{kamion@jhu.edu}}
+\cvline{Letter 2}{Ely D.\ Kovetz, \emph{Ben-Gurion University}, \texttt{kovetz@bgu.ac.il}}
+\cvline{Letter 3}{David E.\ Kaplan, \emph{Johns Hopkins University}, \texttt{david.kaplan@jhu.edu}}
+
+
+\vfill
 \begin{center}
-{\scriptsize Last updated: \today\- •\- Lingyuan Ji © All Rights Reserved \\ \href{https://github.com/lingyuanji/resume/blob/master/resume.pdf}{https://github.com/lingyuanji/resume/blob/master/resume.pdf}} % Any final footer text such as a URL to the latest version of your CV, last updated date, compiled in XeTeX, etc
+{\scriptsize Compiled at \today. For the latest version, visit: \\ \href{https://github.com/lingyuanji/resume/blob/master/resume.pdf}{https://github.com/lingyuanji/resume/blob/master/resume.pdf}}
 \end{center}
-
-%----------------------------------------------------------------------------------------
 
 \end{document}
